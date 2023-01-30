@@ -1,0 +1,4 @@
+﻿SELECT products.Name, categories.Name
+	FROM [CategoryProducts] AS categoryProducts 
+		JOIN [Categories] AS categories ON categories.Id = categoryProducts.CategoryId
+		FULL JOIN [Products] AS products ON products.Id = categoryProducts.ProductId
